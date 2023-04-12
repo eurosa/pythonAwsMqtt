@@ -6,13 +6,13 @@ import json
 import AWSIoTPythonSDK.MQTTLib as AWSIoTPyMQTT
 
 # Define ENDPOINT, CLIENT_ID, PATH_TO_CERTIFICATE, PATH_TO_PRIVATE_KEY, PATH_TO_AMAZON_ROOT_CA_1, MESSAGE, TOPIC, and RANGE
-ENDPOINT = "customEndpointUrl"
-CLIENT_ID = "testDevice"
-PATH_TO_CERTIFICATE = "certificates/a1b23cd45e-certificate.pem.crt"
-PATH_TO_PRIVATE_KEY = "certificates/a1b23cd45e-private.pem.key"
+ENDPOINT = "a2w5xcmt7e0hk6-ats.iot.us-east-1.amazonaws.com"
+CLIENT_ID = "android_test"
+PATH_TO_CERTIFICATE = "certificates/certificate.pem.crt"
+PATH_TO_PRIVATE_KEY = "certificates/private.pem.key"
 PATH_TO_AMAZON_ROOT_CA_1 = "certificates/root.pem"
 MESSAGE = "Hello World"
-TOPIC = "test/testing"
+TOPIC = "sdk/test/python"
 RANGE = 20
 
 myAWSIoTMQTTClient = AWSIoTPyMQTT.AWSIoTMQTTClient(CLIENT_ID)
